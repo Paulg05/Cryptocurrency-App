@@ -5,7 +5,7 @@ const Cryptocurrencies = () => {
     <div>
       
     </div>
-  )
+  ) 
 }
 
 export default Cryptocurrencies
