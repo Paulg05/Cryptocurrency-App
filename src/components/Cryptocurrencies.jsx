@@ -24,7 +24,7 @@ const Cryptocurrencies = ({ simplified }) => {
   return (
     <>
       {!simplified && (
-      // filter for certain cryptos in input
+        // filter for certain cryptos in input
         <div className="search-crypto">
           <Input
             placeholder="Search Cryptocurrency"
@@ -40,7 +40,9 @@ const Cryptocurrencies = ({ simplified }) => {
             <Link to={`/crypto/${currency.id}`}>
               <Card
                 title={`${currency.rank}. ${currency.name}`}
-                extra={<img className="crypto-image" src={currency.iconUrl} />}
+                extra={
+                  <img className="crypto-image" src={currency.iconUrl} alt="" />
+                }
                 hoverable
               >
                 <p>Price: {millify(currency.price)}</p>
